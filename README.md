@@ -16,7 +16,8 @@
 </p>
 
 Pada tampilan **Read Data**, daftar mahasiswa akan muncul dalam bentuk `ion-card` yang memuat nama dan jurusan setiap mahasiswa yang tersimpan di database. Setiap `ion-card` berisi komponen `ion-label` untuk menampilkan nama dan jurusan, serta dua tombol, yaitu **Edit** dan **Hapus**.
-**Alur:**
+
+###### **Alur:**
 
 - Saat halaman `MahasiswaPage` dimuat, fungsi `ngOnInit()` dipanggil.
 - `ngOnInit()` menjalankan fungsi `getMahasiswa()` untuk memanggil API `tampil.php`.
@@ -30,7 +31,8 @@ Pada tampilan **Read Data**, daftar mahasiswa akan muncul dalam bentuk `ion-card
 </p>
 
 Pada fitur **Create Data**, tampilan modal **Tambah Mahasiswa** akan terbuka ketika pengguna mengklik tombol "Tambah Mahasiswa" pada halaman utama. Modal ini berisi form input yang memungkinkan pengguna untuk memasukkan nama dan jurusan mahasiswa.
-**Alur:**
+
+###### **Alur:**
 
 - Pengguna mengklik tombol "Tambah Mahasiswa" yang memanggil `openModalTambah()`.
 - `openModalTambah()` membuka modal dan mereset input form dengan memanggil `resetModal()`.
@@ -46,7 +48,8 @@ Pada fitur **Create Data**, tampilan modal **Tambah Mahasiswa** akan terbuka ket
 </p>
 
 Pada fitur **Update Data**, tampilan modal **Edit Mahasiswa** akan terbuka saat pengguna mengklik tombol "Edit" pada salah satu `ion-card` mahasiswa. Modal ini memiliki form yang otomatis terisi dengan data mahasiswa yang dipilih, memungkinkan pengguna untuk memperbarui nama atau jurusan mahasiswa.
-**Alur:**
+
+###### **Alur:**
 
 - Pengguna memilih mahasiswa untuk diedit dan mengklik tombol "Edit", yang memanggil `openModalEdit()`.
 - `openModalEdit()` membuka modal `Edit Mahasiswa` dan mengambil data mahasiswa melalui `ambilMahasiswa()`.
@@ -62,7 +65,8 @@ Pada fitur **Update Data**, tampilan modal **Edit Mahasiswa** akan terbuka saat 
 </p>
 
 Pada fitur **Delete Data**, tombol **Hapus** tersedia di setiap `ion-card` mahasiswa. Ketika tombol ini diklik, sebuah dialog konfirmasi muncul untuk memastikan bahwa pengguna benar-benar ingin menghapus data mahasiswa tersebut. Jika pengguna menyetujui, daftar mahasiswa diperbarui untuk mencerminkan penghapusan.
-**Alur:**
+
+###### **Alur:**
 
 - Pengguna mengklik tombol "Hapus" pada data mahasiswa yang ingin dihapus.
 - Fungsi `confirmHapusMahasiswa()` menampilkan konfirmasi kepada pengguna.
